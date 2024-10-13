@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pasta Around the World</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!--Font Awesome Icons in the HTML-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+  <!--Navbar-->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Homepage</a></li>
+      <li><a href="#types">Pasta types</a></li>
+      <li><a href="#about">About us</a></li>
+      <li><a href="#history-culture">Pasta Culture</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!--Header-->
+  <header class="header">
+    <img src="pasta_images/main.png" alt="Header Image" class="header_image" />
+  </header>
+
+  <section id="types" class="pasta-types">
+    <h2>Different Types of Pasta</h2>
+    <div class="pasta-grid">
+      <div class="pasta-item" onclick="openModal('modal1')">
+        <img src="pasta_images/spaghetti.jpg" alt="Spaghetti" />
+        <h3>Spaghetti (Italy)</h3>
+        <p>
+          Long, thin Italian pasta usually served with tomato or meat sauces,
+          often accompanied by meatballs or vegetables.
+        </p>
+      </div>
+      <div class="pasta-item" onclick="openModal('modal2')">
+        <img src="pasta_images/ramen.jpg" alt="Ramen" />
+        <h3>Ramen (Japan)</h3>
+        <p>
+          Japanese curly noodles served in a rich broth, typically topped with
+          sliced pork, soft-boiled eggs, and green onions.
+        </p>
+      </div>
+      <div class="pasta-item" onclick="openModal('modal3')">
+        <img src="pasta_images/lo_mein.jpg" alt="Lo Mein" />
+        <h3>Lo Mein (China)</h3>
+        <p>
+          Chinese wheat noodles that are boiled and then stir-fried with
+          vegetables and meats in a savory soy-based sauce.
+        </p>
+      </div>
+      <div class="pasta-item" onclick="openModal('modal4')">
+        <img src="pasta_images/orzo.jpg" alt="Orzo" />
+        <h3>Orzo (Greece)</h3>
+        <p>
+          Small, rice-shaped pasta commonly used in soups and salads, known
+          for its ability to absorb flavors.
+        </p>
+      </div>
+      <div class="pasta-item" onclick="openModal('modal5')">
+        <img src="pasta_images/jjajangmyeon.jpg" alt="Jjajangmyeon-" />
+        <h3>Jjajangmyeon (Korea)</h3>
+        <p>
+          Korean noodles topped with a thick, savory black bean sauce, often
+          mixed with vegetables and meats.
+        </p>
+      </div>
+      <div class="pasta-item" onclick="openModal('modal6')">
+        <img src="pasta_images/spätzle.jpg" alt="Spätzle" />
+        <h3>Spätzle (Germany)</h3>
+        <p>
+          Soft noodles, made by dropping dough into boiling water. Its often
+          served as a side dish or mixed with sauces.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modals -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+      <video controls>
+        <source src="videos/spaghetti_video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <p>
+        This video explains how to prepare Spaghetti in the traditional
+        Italian way.
+      </p>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <video controls>
+        <source src="videos/ramen_video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <p>
+        Learn about the history and preparation of Ramen, one of Japan's most
+        famous dishes.
+      </p>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal3')">&times;</span>
+      <video controls>
+        <source src="videos/lo_mein_video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <p>
+        Discover the traditional way to make Lo Mein, a classic Chinese
+        stir-fried noodle dish.
+      </p>
+    </div>
+  </div>
+
+  <div id="modal4" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal4')">&times;</span>
+      <video controls>
+        <source src="videos/orzo_video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <p>Watch how to use Orzo in various Mediterranean dishes.</p>
+    </div>
+  </div>
+
+  <div id="modal5" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal5')">&times;</span>
+      <video controls>
+        <source src="videos/jjajangmyeon_video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <p>
+        This video explains the preparation and history of Jjajangmyeon, a
+        Korean-Chinese noodle dish.
+      </p>
+    </div>
+  </div>
+
+  <div id="modal6" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal6')">&times;</span>
+      <video controls>
+        <source src="videos/spatzle_video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <p>
+        Learn how Spätzle is made and served in traditional German cuisine.
+      </p>
+    </div>
+  </div>
+
+  <!--About-->
+  <section id="about" class="about">
+    <img src="pasta_images/1.png" alt="1" class="about-image" />
+    <h2>About This Site</h2>
+    <div class="about-grid">
+      <div class="about-item">
+        <h3>Our Mission</h3>
+        <p>
+          To celebrate the diversity of pasta dishes from around the world and
+          inspire culinary creativity.
+        </p>
+      </div>
+
+      <div class="about-item">
+        <h3>What We Offer</h3>
+        <p>
+          Detailed guides, recipes, and videos on various pasta types,
+          showcasing how to prepare them authentically.
+        </p>
+      </div>
+
+      <div class="about-item">
+        <h3>Join Our Community</h3>
+        <p>
+          Connect with pasta lovers, share your recipes, and participate in
+          discussions about your favorite dishes.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!--Pasta History and Culture-->
+  <section id="history-culture" class="pasta-culture">
+    <div class="content">
+      <h1>Let's See the History and Culture of Pasta!</h1>
+      <p>
+        Pasta is not just a dish; it is a reflection of cultural heritage, tradition, and the art of cooking that has
+        evolved over centuries. In this section, we explore the rich history of pasta and its significance in various
+        cultures around the world.
+      </p>
+      <button>Explore History</button>
+    </div>
+
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="pasta_images/italy.png" />
+          <div class="cost">Italy</div>
+          <div class="overlay">
+            <h1>The Birthplace of Pasta</h1>
+            <p>
+              Italy is where pasta flourished, becoming a staple of traditional cuisine. Shapes like spaghetti and
+              fettuccine emerged here, making Italian pasta renowned worldwide.
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="pasta_images/china.jpg" />
+          <div class="cost">China</div>
+          <div class="overlay">
+            <h1>Noodles Through History</h1>
+            <p>
+              Ancient China is believed to have produced some of the earliest noodles over 4,000 years ago, influencing
+              pasta dishes across Asia and the world.
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="pasta_images/japan.jpg" />
+          <div class="cost">Japan</div>
+          <div class="overlay">
+            <h1>The Evolution of Ramen</h1>
+            <p>
+              Originally adapted from Chinese noodles, ramen became Japan’s comfort food, celebrated in countless
+              regional varieties with its savory broth.
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="pasta_images/germany.jpg" />
+          <div class="cost">Germany</div>
+          <div class="overlay">
+            <h1>Orzo and Beyond</h1>
+            <p>
+              In the Middle East, small pasta shapes like orzo have played a role in traditional dishes, making them a
+              versatile component of local cuisine.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--Videos-->
+  <section id="videop" class="video_part">
+    <video class="specific-video" autoplay loop muted>
+      <source src="pasta_videos/pasta_main1.mp4" type="video/mp4" />
+    </video>
+    <video class="specific-video" autoplay loop muted>
+      <source src="pasta_videos/pasta_main2.mp4" type="video/mp4" />
+    </video>
+    <video class="specific-video" autoplay loop muted>
+      <source src="pasta_videos/pasta_main3.mp4" type="video/mp4" />
+    </video>
+    <video class="specific-video" autoplay loop muted>
+      <source src="pasta_videos/pasta_main4.mp4" type="video/mp4" />
+    </video>
+  </section>
+
+  <!--contact-->
+  <section id="contact" class="contact-us">
+    <div class="contact-header">
+      <h2>Let's Connect</h2>
+      <p>We’re always here to help. Reach out through any of our channels below!</p>
+    </div>
+    <div class="contact-container">
+      <div class="contact-detail">
+        <div class="icon-circle">
+          <i class="fas fa-envelope"></i> <!-- Email Icon -->
+        </div>
+        <h3>Email</h3>
+        <p>Info@pastaworld.com</p>
+      </div>
+      <div class="contact-detail">
+        <div class="icon-circle">
+          <i class="fas fa-phone-alt"></i> <!-- Phone Icon -->
+        </div>
+        <h3>Call Us</h3>
+        <p>+123 456 7890</p>
+      </div>
+      <div class="contact-detail">
+        <div class="icon-circle">
+          <i class="fas fa-map-marker-alt"></i> <!-- Location Icon -->
+        </div>
+        <h3>Location</h3>
+        <p>123 Pasta Lane, Rome, Italy</p>
+      </div>
+    </div>
+  </section>
+
+  <!--Footer-->
+  <footer class="footer">
+    <p>&copy; 2024 Pasta Around the World. All rights reserved.</p>
+    <div class="social-media">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <img src="pasta_images/facebook.png" alt="Facebook">
+      </a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+        <img src="pasta_images/twitter.png" alt="Twitter">
+      </a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <img src="pasta_images/instagram.png  " alt="Instagram">
+      </a>
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+        <img src="pasta_images/linkedin.png" alt="LinkedIn">
+      </a>
+    </div>
+  </footer>
+
+
+  <!-- JavaScript dosyasını bağla -->
+  <script src="scripts.js"></script>
+</body>
+
+</html>
